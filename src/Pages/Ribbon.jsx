@@ -48,7 +48,7 @@ export default function Ribbon({
           <svg className="icon" viewBox="0 0 24 24" aria-hidden>
             <path d="M3 6h18v2H3zM3 11h12v2H3zM3 16h18v2H3z" />
           </svg>
-          <span>Generate</span>
+          <span>Generate Report</span>
         </button>
 
       </div>
