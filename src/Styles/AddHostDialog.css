@@ -1,0 +1,177 @@
+.emco-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.emco-dialog {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 90%;
+}
+
+.emco-dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.emco-dialog-header .flex {
+  display: flex;
+  gap: 12px;
+}
+
+.emco-close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  padding: 4px;
+}
+
+.emco-close-btn:hover {
+  color: #333;
+}
+
+.emco-error-section {
+  padding: 16px 20px;
+  background: #ffebee;
+  border-bottom: 1px solid #ffcccc;
+  display: flex;
+  gap: 12px;
+  color: #c62828;
+  font-size: 13px;
+}
+
+.emco-form {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.emco-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.emco-input,
+.emco-select,
+.emco-textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.emco-input:focus,
+.emco-select:focus,
+.emco-textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.emco-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.emco-mode-selector {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.mode-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.mode-option input {
+  cursor: pointer;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.checkbox-item input {
+  cursor: pointer;
+}
+
+.checkbox-label {
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+}
+
+.emco-checkbox-group {
+  margin-bottom: 16px;
+}
+
+.emco-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.emco-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.emco-btn-cancel {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #d0d0d0;
+}
+
+.emco-btn-cancel:hover {
+  background: #e0e0e0;
+}
+
+.emco-btn-add {
+  background: #4a90e2;
+  color: white;
+}
+
+.emco-btn-add:hover {
+  background: #357abd;
+}

@@ -1,0 +1,79 @@
+.ribbon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ribbon-left,
+.ribbon-right {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ribbon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 12px;
+  background: #f9f9f9;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.ribbon-btn:hover {
+  background: #efefef;
+  border-color: #b0b0b0;
+}
+
+.ribbon-btn.primary {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  border-color: #2e5a8f;
+}
+
+.ribbon-btn.primary:hover {
+  background: linear-gradient(135deg, #357abd 0%, #2e5a8f 100%);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
+}
+
+.ribbon-meta {
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+
+.dark .ribbon {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+  border-bottom-color: #444;
+}
+
+.dark .ribbon-btn {
+  background: #333;
+  border-color: #555;
+  color: #eee;
+}
+
+.dark .ribbon-btn:hover {
+  background: #444;
+  border-color: #777;
+}

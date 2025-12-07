@@ -1,0 +1,32 @@
+.logs {
+  width: 100%;
+}
+
+.logs-output {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  max-height: 300px;
+  overflow-y: auto;
+  color: #333;
+}
+
+.log-line {
+  padding: 4px 0;
+  word-break: break-word;
+}
+
+.logs-output .empty {
+  color: #999;
+  font-style: italic;
+}
+
+.dark .logs-output {
+  background: #2a2a2a;
+  border-color: #444;
+  color: #aaa;
+}
