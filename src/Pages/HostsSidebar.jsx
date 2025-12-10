@@ -49,7 +49,7 @@ export default function HostsSidebar({ hosts, onAddHost, onDeleteHost, selectedH
         <div className="sidebar-content">
           {Object.keys(groupedHosts).length === 0 ? (
             <div className="empty-state">
-              <p>No hosts added yet</p>
+              <p>No hosts added yet!</p>
               <button className="btn-add-first" onClick={() => setDialogOpen(true)}>
                 Add First Host
               </button>
