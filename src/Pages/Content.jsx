@@ -13,7 +13,7 @@ export default function Content({ logs, addLog, hosts, settings }) {
   return (
     <section className="content">
       <div className="content-header">
-        <h1>Statistics Summary</h1>
+        <h1>Vista Net</h1>
         <div className="period" id="periodRange">
           Real-time
         </div>
@@ -32,11 +32,15 @@ export default function Content({ logs, addLog, hosts, settings }) {
       </div>
 
       {activeTab === "statistics" && (
-        <div style={{ padding: "16px" }}>
-          <Statistics hosts={hosts} />
-          <div style={{ marginTop: "16px" }}>
-            <h3>Logs</h3>
-            <Logs logs={logs} />
+        <div className="tab-content">
+          <div className="tab-content-scrollable">
+            <div className="statistics-section">
+              <Statistics hosts={hosts} />
+              <div>
+                <h3>Logs</h3>
+                <Logs logs={logs} />
+              </div>
+            </div>
           </div>
         </div>
       )}
@@ -66,16 +70,18 @@ export default function Content({ logs, addLog, hosts, settings }) {
       )}
 
       {activeTab === "state" && (
-        <div id="stateView" className="table-wrap" style={{ padding: "16px" }}>
-          <div style={{ fontWeight: 700, marginBottom: "10px" }}>Device States</div>
-          <State hosts={hosts} />
+        <div className="state-section">
+          <div className="state-section-header">Device States</div>
+          <div className="state-section-content">
+            <State hosts={hosts} />
+          </div>
         </div>
       )}
 
       {activeTab === "topology" && (
-        <div id="topologyView" className="table-wrap" style={{ padding: "16px" }}>
-          <div style={{ fontWeight: 700, marginBottom: "10px" }}>Network Topology</div>
-          <div id="topologySvgWrap" className="topology-container">
+        <div className="topology-section">
+          <div className="topology-section-header">Network Topology</div>
+          <div className="topology-container">
             <Topology hosts={hosts} settings={settings} />
           </div>
         </div>
