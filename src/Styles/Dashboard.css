@@ -1,20 +1,44 @@
+
 .dashboard {
   display: flex;
   flex-direction: column;
   height: 100vh;
   background: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden; 
 }
 
 .dashboard-layout {
   display: flex;
   flex: 1;
   overflow: hidden;
+  min-height: 0;
+}
+
+.hosts-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  border-right: 1px solid #e0e0e0;
+  height: 100%; 
+  overflow-y: auto; 
+}
+
+.content {
+  flex: 1;
+  min-width: 0; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .dashboard.dark {
   background: #1f1f1f;
   color: #eee;
+}
+
+.dashboard.dark .hosts-sidebar {
+  border-right-color: #444;
 }
 
 * {
@@ -26,6 +50,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  height: 100%;
+  overflow: hidden;
 }
 
 #root {
