@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const API_URL = "http://localhost/Vista-net/api/Auth/Login.php";
+const API_URL = "http://localhost:8090/Vista-net/api/Auth/Login.php";
 
 export const LoginApi = async (email, password) => {
     try {

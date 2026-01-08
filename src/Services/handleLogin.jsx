@@ -12,6 +12,7 @@ export const handleLogin = async (e, email, password) => {
         localStorage.setItem('id', user.id);
         localStorage.setItem('name', user.name);
         localStorage.setItem('email', user.email);
+        localStorage.setItem('role', user.role)
         localStorage.setItem('isLoggedIn', "true");
         window.location.href = '/dashboard';
     }

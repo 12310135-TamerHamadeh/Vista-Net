@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export const ADD_HOST_URL = "http://localhost/Vista-net/api/Hosts/AddHost.php";
+export const ADD_HOST_URL = "http://localhost:8090/Vista-net/api/Hosts/AddHost.php";
 
 export const addHost = async (payload) => {
   try {

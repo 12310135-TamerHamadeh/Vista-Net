@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const API_URL = "http://localhost/Vista-net/api/Hosts/GetLogs.php?limit=100";
+const API_URL = "http://localhost:8090/Vista-net/api/Hosts/GetLogs.php?limit=100";
 
 export const getLogs = async () => {
   try {
